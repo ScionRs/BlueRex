@@ -1,4 +1,60 @@
 .header
   width: 100%
-  min-height: 945px
+  min-height: 100vh
+  padding-top: 2.75rem
   background: url('../img/header/backgroundimg.png') center (center / cover) no-repeat
+  &__nav
+    display: flex
+    justify-content: space-between
+  &__logo
+    display: flex
+    &-text
+      font-family: "Montserrat-SemiBold",sans-serif
+      font-weight: bold
+      font-size: 2.5rem
+      color: white
+      padding-left: 11px
+  &__menu
+    display: flex
+    list-style-type: none
+    margin-top: 1.2rem
+  &__item
+    &-link
+      font-family: "Montserrat-SemiBold",sans-serif
+      font-size: 1.1rem
+      color: white
+      padding: 10px 20px
+      font-weight: 500
+  &__wrapper
+    display: flex
+  &__description
+    width: 740px
+    &-title
+      padding-top: 12rem
+      font-family: 'Palatino Linotype',sans-serif
+      font-style: italic
+      font-size: 2.6rem
+      font-weight: 400
+      color: white
+    &-subtitle
+      font-family: 'Palatino Linotype',sans-serif
+      font-size: 4rem
+      color: white
+      line-height: 4.5rem
+    &-text
+      color: white
+      width: 42.75rem
+      font-size: 1.4rem
+  &__img
+    display: block
+    position: absolute
+    bottom: 0
+    left: 47%
+  &__btn
+    @include btn-component
+    background-color: $pink
+    &-purple
+      background-color: $purplebutton
+  &__buttons
+   margin-left: 2rem
+   margin-top: 4.5rem
