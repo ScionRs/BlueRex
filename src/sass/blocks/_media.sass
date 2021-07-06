@@ -1,0 +1,117 @@
+@media (max-width: 1200px)
+  .header
+    &__img
+      left: 52%
+    &__btn
+      width: 190px
+      font-size: 1rem
+    &__description
+      width: 650px
+      &-subtitle
+        font-size: 3rem
+      &-text
+        width: 37rem
+        font-size: 1.4rem
+    &__item
+      &-link
+        padding: 10px 15px
+        font-size: 1rem
+
+@media (max-width: 991px)
+  .header
+    &__logo
+      &-text
+        font-size: 2rem
+    &__menu
+      position: fixed
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      top: -5%
+      left: -100%
+      right: 0
+      width: 50%
+      height: 100vh
+      padding: 20px 15px
+      background-color: rgba(0,0,0, .8)
+      transition: 0.6s all
+      &-active
+        left: -10%
+        display: flex
+    &__item
+      padding-right: 0
+      border: none
+      margin: 10px 0
+      &-link
+        font-size: 20px
+    &__promo
+      font-size: 1.5rem
+    &__subtitle
+      font-size: 0.9rem
+
+  .hamburger
+    display: block
+    position: absolute
+    right: 30px
+    top: 6%
+    transform: translateY(-50%)
+    width: 30px
+    height: 15px
+    span
+      display: block
+      height: 3px
+      width: 100%
+      background-color: #ffffff
+      margin-bottom: 2px
+      transition: 0.5s all
+    &-active
+      span
+        margin-bottom: -2px
+        &:nth-child(1)
+          transform: translateY(3px) rotate(-45deg)
+        &:nth-child(2)
+          display: none
+        &:nth-child(3)
+          transform: translateY(3px) rotate(45deg)
+
+@media (max-width: 767px)
+  .header
+    &__wrapper
+      justify-content: center
+      align-items: center
+    &__img
+      display: none
+    &__description
+      width: 550px
+      text-align: center
+      &-title
+        font-size: 2.3rem
+        padding-top: 9rem
+      &-subtitle
+        font-size: 2.5rem
+      &-text
+        width: 31rem
+        margin: 0 auto
+  .hamburger
+    top: 8%
+
+@media (max-width: 576px)
+  .header
+    &__logo
+      &-text
+        font-size: 1.5rem
+    &__description
+      width: 100%
+      &-title
+        font-size: 2rem
+        padding-top: 6rem
+      &-subtitle
+        font-size: 2rem
+        line-height: 3rem
+      &-text
+        width: 100%
+    &__btn
+      margin-bottom: 1rem
+  .hamburger
+    top: 7%
+
