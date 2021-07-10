@@ -26,6 +26,19 @@
   background-color: $backgroundcolor
   border-bottom: 8px solid $shadowbottom
   border-radius: 10px
+  text-align: center
   text-transform: uppercase
   font-weight: bold
   margin-left: 10px
+
+@mixin title-component($fontsize,$color)
+  font-size: $fontsize
+  color: $color
+  font-family: 'Palatino Linotype',sans-serif
+  font-style: italic
+
+@mixin subtitle-component($fontsize,$color)
+  font-size: $fontsize
+  color: $color
+  font-family: "Montserrat-SemiBold",sans-serif
+  font-weight: bold

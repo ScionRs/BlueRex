@@ -16,6 +16,12 @@
       &-link
         padding: 10px 15px
         font-size: 1rem
+  .about
+    &__tab
+      font-size: 0.8rem
+      width: 110px
+
+
 
 @media (max-width: 991px)
   .header
@@ -73,7 +79,28 @@
           display: none
         &:nth-child(3)
           transform: translateY(3px) rotate(45deg)
-
+  .about
+    &__item
+      &-img
+        width: 300px
+        height: auto
+    &__tab
+      margin-right: 10px
+    &__subtitle
+      font-size: 2.5rem
+  .ideas
+    &__text
+      width: 500px
+      font-size: 1rem
+  .advantages
+    &__item
+      width: 240px
+      &-title
+        font-size: 3rem
+      &-subtitle
+        font-size: 20px
+      &-text
+        width: auto
 @media (max-width: 767px)
   .header
     &__wrapper
@@ -94,6 +121,23 @@
         margin: 0 auto
   .hamburger
     top: 8%
+  .about
+    &__subtitle
+      font-size: 2rem
+    &__tabs
+      display: flex
+      flex-direction: column
+    &__item
+      &-img
+        width: 250px
+  .advantages
+    &__item
+      &-title
+        font-size: 2rem
+      &-subtitle
+        font-size: 15px
+        span
+          font-size: 20px
 
 @media (max-width: 576px)
   .header
@@ -114,4 +158,23 @@
       margin-bottom: 1rem
   .hamburger
     top: 7%
-
+  .about
+    &__item
+      &-text
+        width: auto
+        margin-top: 10px
+        font-size: 12px
+      &-img
+        display: none
+  .advantages
+    margin-top: 2rem
+    &__items
+      flex-direction: column
+      align-items: center
+  .ideas
+    &__title
+      font-size: 35px
+    &__subtitle
+      font-size: 30px
+    &__text
+      width: auto
