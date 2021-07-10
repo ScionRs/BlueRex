@@ -1,0 +1,60 @@
+.portfolio
+  background-color: $lightred
+  padding: 80px 0
+  &__subtitle
+    @include subtitle-component(50px,black)
+    text-align: center
+  &__text
+    font-family: "Montserrat-SemiBold",sans-serif
+    width: 940px
+    font-size: 1.2rem
+    color: $fontcolorbrown
+    font-weight: bold
+    text-align: center
+    display: block
+    margin: 0 auto
+    margin-top: 45px
+  &__tabs
+    display: flex
+    justify-content: center
+    margin-top: 2.5rem
+  &__tab
+    @include btn-component(120px,40px,1rem,$fontcolorbrown)
+    background-color: transparent
+    border: 0
+    box-shadow: none
+    font-size: 0.9rem
+    &:hover
+      background-color: $pink
+      color: white
+      transition: 0.5s all
+  &__items
+    display: flex
+    flex-wrap: wrap
+  &__item
+    width: 320px
+    height: 310px
+    margin: 20px
+    &-1
+      background: url('../img/portfolio/img1.png') center (center / cover) no-repeat
+    &-2
+      background: url('../img/portfolio/img2.png') center (center / cover) no-repeat
+    &-3
+      background: url('../img/portfolio/img3.png') center (center / cover) no-repeat
+    &-4
+      background: url('../img/portfolio/img4.png') center (center / cover) no-repeat
+    &-5
+      background: url('../img/portfolio/img5.png') center (center / cover) no-repeat
+    &-6
+      background: url('../img/portfolio/img6.png') center (center / cover) no-repeat
+    &-7
+      background: url('../img/portfolio/img7.png') center (center / cover) no-repeat
+    &-8
+      background: url('../img/portfolio/img8.png') center (center / cover) no-repeat
+    &-9
+      background: url('../img/portfolio/img9.png') center (center / cover) no-repeat
+  &__btn
+    @include btn-universal($pink,$pinkshadow)
+    display: block
+    margin: 0 auto
+    margin-top: 90px
