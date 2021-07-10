@@ -1,12 +1,12 @@
 
-@mixin btn-component
+@mixin btn-component($width,$height,$fontsize,$color)
   font-family: "Montserrat-SemiBold",sans-serif
-  font-size: 1.1rem
+  font-size: $fontsize
   font-weight: bold
   text-transform: uppercase
-  width: 210px
-  height: 60px
-  color: whitesmoke
+  width: $width
+  height: $height
+  color: $color
   border-radius: 30px
   outline: none !important
   text-align: center
@@ -14,3 +14,18 @@
   border: 0
   margin-right: 24px
   box-shadow: 1.169px 3.825px 16px 0px rgba(1, 2, 2, 0.35)
+
+@mixin btn-universal($backgroundcolor,$shadowbottom)
+  width: 146px
+  height: 50px
+  font-family: "Montserrat-SemiBold",sans-serif
+  font-size: 15px
+  color: white
+  border: 0
+  outline: none !important
+  background-color: $backgroundcolor
+  border-bottom: 8px solid $shadowbottom
+  border-radius: 10px
+  text-transform: uppercase
+  font-weight: bold
+  margin-left: 10px

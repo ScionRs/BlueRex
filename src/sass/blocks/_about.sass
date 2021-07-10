@@ -1,2 +1,35 @@
 .about
+  padding-top: $margintitle
+  height: 660px
   background: url('../img/about/World Map.png') center (center / cover) no-repeat
+  &__tabs
+    margin-top: 3.125rem
+  &__tab
+    @include btn-component(120px,40px,1rem,$fontcolorbrown)
+    background-color: transparent
+    border: 0
+    box-shadow: none
+    font-size: 0.9rem
+    &:hover
+      background-color: $pink
+      color: white
+      transition: 0.5s all
+  &__item
+    display: flex
+    justify-content: space-between
+    height: 120px
+    &-img
+      width: 450px
+      height: 600px
+      margin-top: -18rem
+    &-text
+      width: 35.25rem
+      font-family: "Montserrat-SemiBold",sans-serif
+      font-size: 14px
+      font-weight: bold
+      margin-top: 28px
+  &__btn
+    @include btn-universal($pink,$pinkshadow)
+    margin-top: 68px
+
+
