@@ -1,0 +1,36 @@
+.review
+  background: url('../img/testimonials/backgroundshade.png') center (center / cover) no-repeat
+  padding: 83px 0
+  position: relative
+  &__wrapper
+    display: flex
+  &__title
+    @include title-component(2.5rem,white)
+    margin-left: 2rem
+  &__subtitle
+    @include subtitle-component(3.125rem,white)
+    margin-left: 2rem
+  &__description
+    display: flex
+    margin-top: 2.5rem
+  &__left
+    font-family: "Montserrat Light",sans-serif
+    color: $pink
+    font-size: 12.5rem
+    margin-top: -7rem
+  &__right
+    font-family: "Montserrat-Regular",sans-serif
+    font-size: 1.3rem
+    width: 480px
+    color: white
+  &__rating
+    margin-left: 4rem
+    color: white
+    font-size: 1.5rem
+    &-icons
+      font-size: 1rem
+      color: $pink
+  &__img
+    position: absolute
+    bottom: 0
+    left: 55%
