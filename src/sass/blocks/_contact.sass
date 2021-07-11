@@ -1,0 +1,42 @@
+.contact
+  background: url('../img/testimonials/backgroundred.png') center (center / cover) no-repeat
+  height: 450px
+  &__title
+    @include subtitle-component(3.125rem,white)
+    text-align: center
+    padding-top: 85px
+  &__subtitle
+    @include subtitle-component(1.875rem,white)
+    text-align: center
+  &__description
+    font-family: "Montserrat-Regular",sans-serif
+    color: white
+    text-align: center
+    padding-top: 1rem
+  &__form
+    margin-top: 3rem
+    display: flex
+  &__input
+    width: 440px
+    height: 50px
+    margin-right: 15px
+    border-radius: 10px
+    color: white !important
+    background-color: #e86d96
+    padding-left: 1rem
+    border: 0
+    outline: none
+  &__btn
+    @include btn-universal($purplebutton,$purpleshadow)
+    display: block
+    margin-top: -1px
+
+input[type="text"]::-webkit-input-placeholder
+  color: white
+input[type="text"]::-moz-placeholder
+  color: white
+
+input[type="email"]::-webkit-input-placeholder
+  color: white
+input[type="email"]::-moz-placeholder
+  color: white
