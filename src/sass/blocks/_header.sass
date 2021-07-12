@@ -26,6 +26,16 @@
       color: white
       padding: 10px 20px
       font-weight: 500
+      border: 3px solid transparent
+      &:hover
+        color: white
+        border: 3px solid white
+        transition: 0.5s all
+        text-decoration: none
+      &:active
+        color: black
+        background-color: white
+
   &__wrapper
     display: flex
   &__description
@@ -56,6 +66,9 @@
   &__btn
     @include btn-component(210px,60px,1.1rem,whitesmoke)
     background-color: $pink
+    &:hover
+      background: linear-gradient(90deg, rgba(95,10,167,1) 0%, rgba(213,21,82,1) 100%)
+      transition: 1s all
     &-purple
       background-color: $purplebutton
   &__buttons
