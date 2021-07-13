@@ -20,6 +20,43 @@
     &__tab
       font-size: 0.8rem
       width: 110px
+  .design
+    &__title
+      font-size: 30px
+    &__subtitle
+      font-size: 45px
+    &__text
+      width: 450px
+    &__img
+      width: 450px
+    &__play
+      top: 30%
+    &__item
+      width: 200px
+      &-title
+        font-size: 20px
+  .portfolio
+    &__text
+      width: 900px
+    &__items
+      justify-content: center
+  .brands
+    &__item
+      width: 100px
+  .review
+    &__title
+      font-size: 2rem
+    &__subtitle
+      font-size: 2.5rem
+    &__text
+      width: 450px
+      font-size: 1rem
+    &__img
+      width: 350px
+    &__rating
+      font-size: 1.3rem
+  .company
+      height: auto
 
 
 
@@ -101,6 +138,26 @@
         font-size: 20px
       &-text
         width: auto
+  .design
+    &__img
+      width: 250px
+    &__play
+      top: 12%
+      left: 30%
+    &__subtitle
+      font-size: 35px
+    &__text
+      width: 400px
+  .portfolio
+    &__text
+      width: 750px
+  .brands
+    height: auto
+    &__items
+      flex-direction: column
+      justify-content: center
+    &__item
+      margin-right: 0
 @media (max-width: 767px)
   .header
     &__wrapper
@@ -122,14 +179,19 @@
   .hamburger
     top: 8%
   .about
+    padding: 104px 0
     &__subtitle
       font-size: 2rem
     &__tabs
       display: flex
       flex-direction: column
+    &__tab
+      margin-bottom: 10px
     &__item
       &-img
         width: 250px
+    &__btn
+      margin-top: 38px
   .advantages
     &__item
       &-title
@@ -138,6 +200,94 @@
         font-size: 15px
         span
           font-size: 20px
+  .design
+    &__wrapper
+      flex-direction: column
+      align-items: center
+    &__play
+      top: 33%
+      left: 38%
+      width: 100px
+      height: 100px
+    &__title
+      text-align: center
+    &__subtitle
+      font-size: 35px
+      text-align: center
+    &__text
+      width: 500px
+      text-align: center
+    &__img
+      width: 500px
+    &__link
+      width: auto
+    &__items
+      justify-content: center
+      margin-left: 2rem
+    &__item
+      width: 200px
+      &-title
+        font-size: 16px
+    &__btn
+      width: 126px
+  .portfolio
+    &__subtitle
+      font-size: 40px
+    &__text
+      width: 500px
+      font-size: 1rem
+  .brands
+    height: auto
+    &__items
+      flex-direction: column
+    &__item
+      width: auto
+  .review
+    &__title
+      font-size: 1.5rem
+    &__subtitle
+      font-size: 2rem
+    &__left
+      font-size: 9rem
+      margin-top: -5rem
+    &__rating
+      font-size: 1rem
+    &__right
+      width: auto
+      font-size: 1rem
+    &__text
+      width: 400px
+    &__img
+      display: none
+      width: 250px
+      left: 60%
+  .contact
+    height: auto
+    &__description
+      padding: 0 10px
+    &__form
+      flex-direction: column
+      justify-content: center
+      align-items: center
+    &__input
+      margin-bottom: 15px
+  .social
+    height: auto
+    &__items
+      flex-direction: column
+      padding: 80px 0
+    &__item
+      border-right: 0
+      margin-bottom: 10px
+  .company
+    &__infos
+      margin-right: 30px
+  .footer
+    height: auto
+    &__items
+      flex-direction: column
+    &__item
+      margin-bottom: 10px
 
 @media (max-width: 576px)
   .header
@@ -156,6 +306,7 @@
         width: 100%
     &__btn
       margin-bottom: 1rem
+      font-size: 0.9rem
   .hamburger
     top: 7%
   .about
@@ -178,3 +329,33 @@
       font-size: 30px
     &__text
       width: auto
+      padding: 10px
+  .design
+    &__text
+      width: auto
+      padding: 10px
+    &__items
+      flex-direction: column
+      align-items: center
+    &__item
+      margin-bottom: 15px
+    &__img
+      width: 300px
+    &__link
+      height: auto
+      margin: 0 auto
+  .portfolio
+    &__text
+      width: auto
+    &__tabs
+      flex-direction: column
+      align-items: center
+  .contact
+    &__input
+      width: 80%
+    &__btn
+      margin-top: 2rem
+  .company
+    &__wrapper
+      flex-direction: column
+      align-items: center

@@ -1,14 +1,18 @@
 
 @mixin btn-component($width,$height,$fontsize,$color)
+  display: flex
+  justify-content: center
+  align-items: center
   font-family: "Montserrat-SemiBold",sans-serif
   font-size: $fontsize
   font-weight: bold
   text-transform: uppercase
   width: $width
   height: $height
-  color: $color
+  color: $color !important
   border-radius: 30px
   outline: none !important
+  cursor: pointer
   text-align: center
   letter-spacing: 1px
   border: 0
